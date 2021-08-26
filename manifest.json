@@ -1,0 +1,20 @@
+{
+    "name": "LinkedIn People Names O",
+    "description": "Build a basic Extension!",
+    "version": "1.0.1",
+    "manifest_version": 2,
+    "permissions": [
+        "tabs", "<all_urls>"
+      ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["background_3.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "browser_action": {
+      "default_popup": "Popup.html",
+      "default_title": "A-T-G"
+    }
+  }
